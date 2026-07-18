@@ -2,6 +2,8 @@
 
 Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
 
+![CC-10-SRC 10 Channels Smart Controller](cc-10-src.png)
+
 ## Download
 
 **➡ Firmware download page: https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/**

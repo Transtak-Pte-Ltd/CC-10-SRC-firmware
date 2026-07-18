@@ -17,19 +17,6 @@
     --tag-bg: #e6f4ef;
     --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 4px 12px rgba(16, 24, 40, 0.05);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1420;
-      --card: #1a2130;
-      --text: #e8edf4;
-      --muted: #93a3b8;
-      --accent: #2fb98a;
-      --accent-hover: #45cc9e;
-      --border: #2a3446;
-      --tag-bg: #14372b;
-      --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    }
-  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -50,6 +37,12 @@
   }
   h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.5rem; }
   .subtitle { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
+  .board-photo {
+    display: block;
+    max-width: 100%;
+    width: 480px;
+    margin: 1.5rem auto 0;
+  }
   .card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -186,6 +179,7 @@
     <div class="brand">Transtak Pte Ltd</div>
     <h1>CC-10-SRC Firmware</h1>
     <p class="subtitle">Official firmware downloads for the CC-10-SRC 10-channel relay board. The latest release is shown first.</p>
+    <img class="board-photo" src="cc-10-src.png" alt="CC-10-SRC 10 Channels Smart Controller board">
   </header>
 
   <div id="releases">
