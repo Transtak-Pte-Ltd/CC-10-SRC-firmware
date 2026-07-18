@@ -1,0 +1,4 @@
+# Firmware binaries are distributed via GitHub Releases, not committed to the repo
+*.bin
+*.hex
+*.elf

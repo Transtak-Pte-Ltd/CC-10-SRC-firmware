@@ -118,6 +118,29 @@
   ol.steps { padding-left: 1.25rem; color: var(--muted); font-size: 0.95rem; }
   ol.steps li { margin-bottom: 0.4rem; }
   ol.steps strong { color: var(--text); }
+  ol.steps a { color: var(--accent); }
+  code, pre {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.85em;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+  code { padding: 0.1em 0.35em; }
+  pre {
+    padding: 0.6rem 0.8rem;
+    margin: 0.5rem 0;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  .flash-note {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .flash-note strong { color: var(--text); }
   footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
@@ -150,14 +173,22 @@
     <div class="spinner">Loading firmware releases…</div>
   </div>
 
-  <h2 class="section-title">How to update your board</h2>
+  <h2 class="section-title">How to flash the firmware (ESP32)</h2>
   <div class="card">
     <ol class="steps">
-      <li><strong>Download</strong> the latest firmware file above.</li>
+      <li><strong>Download</strong> the latest <code>.bin</code> firmware file above.</li>
       <li><strong>Connect</strong> the relay board to your computer with a USB cable.</li>
-      <li><strong>Flash</strong> the firmware using the recommended flashing tool for your board.</li>
+      <li><strong>Flash in your browser</strong> (easiest, Chrome or Edge): open
+        <a href="https://espressif.github.io/esptool-js/" target="_blank" rel="noopener">Espressif Web Flasher</a>,
+        click <em>Connect</em> and select the board's serial port, choose the downloaded
+        <code>.bin</code> file, set <strong>Flash Address</strong> to <code>0x0</code>, then click <em>Program</em>.</li>
+      <li><strong>Or flash with esptool</strong> (command line, requires Python):
+        <pre>pip install esptool
+esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin</pre></li>
       <li><strong>Power-cycle</strong> the board after flashing completes.</li>
     </ol>
+    <p class="flash-note">The firmware file is a complete flash image (bootloader + partition table + application),
+    so it must always be written to address <strong>0x0</strong>.</p>
   </div>
 
   <footer>
