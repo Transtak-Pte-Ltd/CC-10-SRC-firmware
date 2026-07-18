@@ -29,16 +29,6 @@ table + application) and must be written to address **`0x0`**:
 
 Video tutorial: [Smart Relay Thingsboard Configuration Tutorial](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
 
-## Publishing a new firmware version (maintainers)
-
-1. Go to **Releases → Draft a new release**.
-2. Create a tag such as `v1.0.0` and give the release a title (e.g. `CC-10-SRC v1.0.0`).
-3. Attach the firmware file(s) (`.bin` / `.hex`) as release assets.
-4. Write short release notes and click **Publish release**.
-
-The download page updates automatically — it lists all published releases,
-with the newest shown first.
-
 ---
 
 © Transtak Pte Ltd
