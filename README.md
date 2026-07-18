@@ -1,0 +1,24 @@
+# CC-10-SRC Firmware
+
+Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
+
+## Download
+
+**➡ Firmware download page: https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/**
+
+All firmware versions are also available directly on the
+[Releases page](https://github.com/Transtak-Pte-Ltd/CC-10-SRC-firmware/releases).
+
+## Publishing a new firmware version (maintainers)
+
+1. Go to **Releases → Draft a new release**.
+2. Create a tag such as `v1.0.0` and give the release a title (e.g. `CC-10-SRC v1.0.0`).
+3. Attach the firmware file(s) (`.bin` / `.hex`) as release assets.
+4. Write short release notes and click **Publish release**.
+
+The download page updates automatically — it lists all published releases,
+with the newest shown first.
+
+---
+
+© Transtak Pte Ltd

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CC-10-SRC Firmware Downloads — Transtak</title>
+<meta name="description" content="Official firmware downloads for the Transtak CC-10-SRC 10-channel relay board.">
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #1a2332;
+    --muted: #5b6b7f;
+    --accent: #0b6e4f;
+    --accent-hover: #0a5c42;
+    --border: #e2e8f0;
+    --tag-bg: #e6f4ef;
+    --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 4px 12px rgba(16, 24, 40, 0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --card: #1a2130;
+      --text: #e8edf4;
+      --muted: #93a3b8;
+      --accent: #2fb98a;
+      --accent-hover: #45cc9e;
+      --border: #2a3446;
+      --tag-bg: #14372b;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { margin-bottom: 2.5rem; }
+  .brand {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .subtitle { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .release-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.35rem;
+  }
+  .release-head h2 { font-size: 1.25rem; }
+  .tag {
+    background: var(--tag-bg);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+  }
+  .release-date { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; }
+  .release-notes {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+  }
+  .asset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .asset-info { min-width: 0; }
+  .asset-name { font-weight: 600; font-size: 0.95rem; word-break: break-all; }
+  .asset-meta { color: var(--muted); font-size: 0.8rem; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--accent-hover); }
+  .empty, .error { text-align: center; padding: 2.5rem 1rem; color: var(--muted); }
+  .empty h2 { color: var(--text); font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+  }
+  ol.steps { padding-left: 1.25rem; color: var(--muted); font-size: 0.95rem; }
+  ol.steps li { margin-bottom: 0.4rem; }
+  ol.steps strong { color: var(--text); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .spinner {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Transtak Pte Ltd</div>
+    <h1>CC-10-SRC Firmware</h1>
+    <p class="subtitle">Official firmware downloads for the CC-10-SRC 10-channel relay board. The latest release is shown first.</p>
+  </header>
+
+  <div id="releases">
+    <div class="spinner">Loading firmware releases…</div>
+  </div>
+
+  <h2 class="section-title">How to update your board</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><strong>Download</strong> the latest firmware file above.</li>
+      <li><strong>Connect</strong> the relay board to your computer with a USB cable.</li>
+      <li><strong>Flash</strong> the firmware using the recommended flashing tool for your board.</li>
+      <li><strong>Power-cycle</strong> the board after flashing completes.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>© Transtak Pte Ltd</span>
+    <a href="https://github.com/Transtak-Pte-Ltd/CC-10-SRC-firmware" target="_blank" rel="noopener">View on GitHub</a>
+  </footer>
+</div>
+
+<script>
+const REPO = "Transtak-Pte-Ltd/CC-10-SRC-firmware";
+const container = document.getElementById("releases");
+
+function fmtSize(bytes) {
+  if (bytes >= 1048576) return (bytes / 1048576).toFixed(1) + " MB";
+  if (bytes >= 1024) return (bytes / 1024).toFixed(0) + " KB";
+  return bytes + " B";
+}
+
+function fmtDate(iso) {
+  return new Date(iso).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+}
+
+function esc(s) {
+  const d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+fetch("https://api.github.com/repos/" + REPO + "/releases")
+  .then(r => {
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  })
+  .then(releases => {
+    releases = releases.filter(rel => !rel.draft);
+    if (!releases.length) {
+      container.innerHTML =
+        '<div class="card empty"><h2>No firmware published yet</h2>' +
+        '<p>Firmware releases will appear here as soon as they are available. Please check back soon.</p></div>';
+      return;
+    }
+    container.innerHTML = releases.map((rel, i) => {
+      const assets = rel.assets.length
+        ? rel.assets.map(a =>
+            '<div class="asset"><div class="asset-info">' +
+            '<div class="asset-name">' + esc(a.name) + "</div>" +
+            '<div class="asset-meta">' + fmtSize(a.size) + " · " + a.download_count + " downloads</div>" +
+            "</div>" +
+            '<a class="btn" href="' + a.browser_download_url + '">Download</a></div>'
+          ).join("")
+        : '<div class="asset-meta" style="color:var(--muted)">No files attached to this release.</div>';
+      const latestTag = i === 0 ? '<span class="tag">Latest</span>' : "";
+      const pre = rel.prerelease ? '<span class="tag">Pre-release</span>' : "";
+      const notes = rel.body ? '<div class="release-notes">' + esc(rel.body.trim()) + "</div>" : "";
+      return '<div class="card">' +
+        '<div class="release-head"><h2>' + esc(rel.name || rel.tag_name) + "</h2>" + latestTag + pre + "</div>" +
+        '<div class="release-date">Released ' + fmtDate(rel.published_at) + "</div>" +
+        notes + assets + "</div>";
+    }).join("");
+  })
+  .catch(() => {
+    container.innerHTML =
+      '<div class="card error">Could not load releases right now. ' +
+      'You can also find all downloads on the <a href="https://github.com/' + REPO + '/releases">GitHub releases page</a>.</div>';
+  });
+</script>
+</body>
+</html>
