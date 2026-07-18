@@ -23,6 +23,10 @@ table + application) and must be written to address **`0x0`**:
   esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin
   ```
 
+## Configure with ThingsBoard
+
+Video tutorial: [Smart Relay Thingsboard Configuration Tutorial](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
+
 ## Publishing a new firmware version (maintainers)
 
 1. Go to **Releases → Draft a new release**.
