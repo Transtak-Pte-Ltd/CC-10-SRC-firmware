@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<img src="program_flashing.png" alt="CC-10-SRC program flashing wiring — USB-to-TTL adapter CP2102" width="640">
+<img src="program_flashing.jpg" alt="CC-10-SRC program flashing wiring — USB-to-TTL adapter CP2102" width="640">
 
 </div>
 
