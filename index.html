@@ -153,6 +153,43 @@
   .video-link { margin-top: 0.75rem; font-size: 0.9rem; }
   .video-link a { color: var(--accent); text-decoration: none; }
   .video-link a:hover { text-decoration: underline; }
+  ul.prereq {
+    list-style: none;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  ul.prereq li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  ul.prereq li:last-child { margin-bottom: 0; }
+  ul.prereq li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  ul.prereq strong { color: var(--text); }
+  ul.prereq a { color: var(--accent); }
+  .stores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .stores img {
+    height: 64px;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .stores a:hover img {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 24, 40, 0.18);
+  }
   footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
@@ -186,6 +223,14 @@
     <div class="spinner">Loading firmware releases…</div>
   </div>
 
+  <h2 class="section-title">Prerequisites</h2>
+  <div class="card">
+    <ul class="prereq">
+      <li><strong>ThingsBoard account</strong> — <a href="https://thingsboard.cloud/signup" target="_blank" rel="noopener">sign up free at thingsboard.cloud</a> to configure and control the board</li>
+      <li><strong>DC 5V 1A power supply</strong> for the relay board</li>
+    </ul>
+  </div>
+
   <h2 class="section-title">How to flash the firmware (ESP32)</h2>
   <div class="card">
     <ol class="steps">
@@ -215,6 +260,18 @@ esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin</pre>
     </div>
     <p class="video-link"><a href="https://www.youtube.com/watch?v=RWnBdYnZ4eA" target="_blank" rel="noopener">
       ▶ Watch on YouTube: Smart Relay Thingsboard Configuration Tutorial</a></p>
+  </div>
+
+  <h2 class="section-title">Where to buy</h2>
+  <div class="card">
+    <div class="stores">
+      <a href="https://creativecrazi.com/" target="_blank" rel="noopener">
+        <img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store"></a>
+      <a href="https://shopee.sg/transtakpteltd" target="_blank" rel="noopener">
+        <img src="shopee.png" alt="CreativeCrazi on Shopee Singapore"></a>
+      <a href="https://www.lazada.sg/shop/creative-crazi" target="_blank" rel="noopener">
+        <img src="lazada.png" alt="Creative-Crazi on Lazada Singapore"></a>
+    </div>
   </div>
 
   <footer>
