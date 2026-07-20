@@ -46,4 +46,6 @@ esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin
 
 ---
 
+> **Note:** If you need the source code, please [contact us](https://transtak.com.sg/contact/).
+
 <div align="center">© Transtak Pte Ltd</div>
