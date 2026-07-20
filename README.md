@@ -4,11 +4,6 @@ Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
 
 ![CC-10-SRC 10 Channels Smart Controller](cc-10-src.png)
 
-## Where to buy
-
-<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="64"></a>
-<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="64"></a>
-<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="64"></a>
 
 ## Download
 
@@ -34,6 +29,13 @@ table + application) and must be written to address **`0x0`**:
 ## Configure with ThingsBoard
 
 Video tutorial: [Smart Relay Thingsboard Configuration Tutorial](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
+
+## Where to buy
+
+<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="70"></a>
+<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="70"></a>
+<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="70"></a>
+
 
 ---
 
