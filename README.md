@@ -32,9 +32,9 @@ Video tutorial: [Smart Relay Thingsboard Configuration Tutorial](https://www.you
 
 ## Where to buy
 
-<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="70"></a>
-<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="70"></a>
-<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="70"></a>
+<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="75"></a>
+<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="75"></a>
+<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="75"></a>
 
 
 ---
