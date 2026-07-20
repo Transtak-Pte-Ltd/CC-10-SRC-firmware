@@ -1,49 +1,49 @@
+<div align="center">
+
 # CC-10-SRC Firmware
 
-Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
+**10-Channel Smart Relay Controller — ESP32**
 
-![CC-10-SRC 10 Channels Smart Controller](cc-10-src.png)
+<img src="cc-10-src.png" alt="CC-10-SRC 10 Channels Smart Controller" width="480">
 
+<br><br>
 
-## Download
+### [⬇ &nbsp;Download Firmware](https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/)
 
-**➡ Firmware download page: https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/**
+</div>
 
-All firmware versions are also available directly on the
-[Releases page](https://github.com/Transtak-Pte-Ltd/CC-10-SRC-firmware/releases).
+<br>
 
-## Prerequisites
+## Getting Started
 
-- **ThingsBoard account** — [sign up at thingsboard.cloud](https://thingsboard.cloud/signup) (free) to configure and control the board
-- **DC 5V 1A power supply** for the relay board
+**You will need:** a free [ThingsBoard account](https://thingsboard.cloud/signup) · DC 5V 1A power supply · USB cable
 
-## Flashing (ESP32)
+**1 — Download** the latest firmware from the [download page](https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/).
 
-The released `.bin` file is a **complete flash image** (bootloader + partition
-table + application) and must be written to address **`0x0`**:
+**2 — Flash** it to the board at address `0x0` using the [Espressif Web Flasher](https://espressif.github.io/esptool-js/) (Chrome/Edge), or from the command line:
 
-- **Browser (Chrome/Edge):** use the [Espressif Web Flasher](https://espressif.github.io/esptool-js/) —
-  connect, choose the `.bin`, set flash address to `0x0`, program.
-- **Command line:**
+```
+esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin
+```
 
-  ```
-  pip install esptool
-  esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin
-  ```
+**3 — Configure** the board with ThingsBoard — watch the tutorial:
 
-## Configure with ThingsBoard
+<div align="center">
 
-Watch the video tutorial — click to play on YouTube:
+[<img src="https://img.youtube.com/vi/RWnBdYnZ4eA/maxresdefault.jpg" alt="Smart Relay Thingsboard Configuration Tutorial" width="480">](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
 
-[![Smart Relay Thingsboard Configuration Tutorial](https://img.youtube.com/vi/RWnBdYnZ4eA/maxresdefault.jpg)](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
+</div>
 
-## Where to buy
+## Where to Buy
 
-<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="75"></a>
-<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="75"></a>
-<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="75"></a>
+<div align="center">
 
+<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="70"></a>&nbsp;
+<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="70"></a>&nbsp;
+<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="70"></a>
+
+</div>
 
 ---
 
-© Transtak Pte Ltd
+<div align="center">© Transtak Pte Ltd</div>
