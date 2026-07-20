@@ -14,6 +14,9 @@
 
 <br>
 
+> ✅ **Good to know:** every CC-10-SRC ships with the firmware already installed — your board works
+> out of the box. Flashing is only needed when updating to a newer firmware version.
+
 ## Getting Started
 
 **You will need:** a free [ThingsBoard account](https://thingsboard.cloud/signup) · DC 5V 1A power supply · USB-to-TTL adapter (CP2102)
