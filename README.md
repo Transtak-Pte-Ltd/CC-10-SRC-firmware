@@ -33,7 +33,9 @@ table + application) and must be written to address **`0x0`**:
 
 ## Configure with ThingsBoard
 
-Video tutorial: [Smart Relay Thingsboard Configuration Tutorial](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
+Watch the video tutorial — click to play on YouTube:
+
+[![Smart Relay Thingsboard Configuration Tutorial](https://img.youtube.com/vi/RWnBdYnZ4eA/maxresdefault.jpg)](https://www.youtube.com/watch?v=RWnBdYnZ4eA)
 
 ## Where to buy
 
