@@ -16,17 +16,25 @@
 
 ## Getting Started
 
-**You will need:** a free [ThingsBoard account](https://thingsboard.cloud/signup) · DC 5V 1A power supply · USB cable
+**You will need:** a free [ThingsBoard account](https://thingsboard.cloud/signup) · DC 5V 1A power supply · USB-to-TTL adapter (CP2102)
 
 **1 — Download** the latest firmware from the [download page](https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/).
 
-**2 — Flash** it to the board at address `0x0` using the [Espressif Web Flasher](https://espressif.github.io/esptool-js/) (Chrome/Edge), or from the command line:
+**2 — Connect** a USB-to-TTL adapter (CP2102) to the board's programming header (**3V3 · RX · TX · GND**) as shown below, and power the board with 5V DC (USB or adapter):
+
+<div align="center">
+
+<img src="program_flashing.png" alt="CC-10-SRC program flashing wiring — USB-to-TTL adapter CP2102" width="640">
+
+</div>
+
+**3 — Flash** the firmware to address `0x0` using the [Espressif Web Flasher](https://espressif.github.io/esptool-js/) (Chrome/Edge), or from the command line:
 
 ```
 esptool.py --chip esp32 --baud 921600 write_flash 0x0 smart_relay_v1.0.bin
 ```
 
-**3 — Configure** the board with ThingsBoard — watch the tutorial:
+**4 — Configure** the board with ThingsBoard — watch the tutorial:
 
 <div align="center">
 
