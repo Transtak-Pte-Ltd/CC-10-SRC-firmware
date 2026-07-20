@@ -23,7 +23,7 @@
 
 **1 — Download** the latest firmware from the [download page](https://transtak-pte-ltd.github.io/CC-10-SRC-firmware/).
 
-**2 — Connect** a USB-to-TTL adapter (CP2102) to the board's programming header (**3V3 · RX · TX · GND**) as shown below, and power the board with 5V DC (USB or adapter). Note the crossed data lines: board **RX → adapter TXD**, board **TX → adapter RXD**.
+**2 — Connect** a USB-to-TTL adapter (CP2102) to the board's programming header (**3V3 · RX · TX · GND**) as shown below, and power the board with 5V DC (USB or adapter). Note the crossed data lines: board **RX → adapter TXD**, board **TX → adapter RXD**. SW2 is Boot , SW1 is RST 
 
 <div align="center">
 
