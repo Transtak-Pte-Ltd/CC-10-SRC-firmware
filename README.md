@@ -12,6 +12,11 @@ Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
 All firmware versions are also available directly on the
 [Releases page](https://github.com/Transtak-Pte-Ltd/CC-10-SRC-firmware/releases).
 
+## Prerequisites
+
+- **ThingsBoard account** — [sign up at thingsboard.cloud](https://thingsboard.cloud/signup) (free) to configure and control the board
+- **DC 5V 1A power supply** for the relay board
+
 ## Flashing (ESP32)
 
 The released `.bin` file is a **complete flash image** (bootloader + partition
