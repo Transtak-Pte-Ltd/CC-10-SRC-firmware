@@ -6,9 +6,9 @@ Official firmware for the **Transtak CC-10-SRC 10-channel relay board**.
 
 ## Where to buy
 
-[![CreativeCrazi Official Store](https://img.shields.io/badge/CreativeCrazi-Official%20Website-f5a623?style=for-the-badge&logo=homeassistantcommunitystore&logoColor=white)](https://creativecrazi.com/)
-[![Shopee Singapore](https://img.shields.io/badge/Shopee-Singapore-ee4d2d?style=for-the-badge&logo=shopee&logoColor=white)](https://shopee.sg/transtakpteltd)
-[![Lazada Singapore](https://img.shields.io/badge/Lazada-Official%20Store-0f0c8f?style=for-the-badge&logo=alibabadotcom&logoColor=white)](https://www.lazada.sg/shop/creative-crazi)
+<a href="https://creativecrazi.com/"><img src="creative_crazi_official_store.png" alt="CreativeCrazi Official Store" height="64"></a>
+<a href="https://shopee.sg/transtakpteltd"><img src="shopee.png" alt="CreativeCrazi on Shopee Singapore" height="64"></a>
+<a href="https://www.lazada.sg/shop/creative-crazi"><img src="lazada.png" alt="Creative-Crazi on Lazada Singapore" height="64"></a>
 
 ## Download
 
